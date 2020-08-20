@@ -1,0 +1,3 @@
+function clickFn(){
+    alert("fighting!");
+}

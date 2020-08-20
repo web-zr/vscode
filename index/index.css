@@ -1,0 +1,8 @@
+p{
+    color:#930;
+    width: 140px;
+    height: 140px;
+    border: 1px solid black;
+    /* 滚动条 */
+    overflow: scroll;
+}
