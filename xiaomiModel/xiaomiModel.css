@@ -1,0 +1,55 @@
+.content {
+  width: 1226px;
+  height: 615px;
+  margin: 90px;
+}
+.content-show {
+  width: 235px;
+  height: 615px;
+  margin-right: 11px;
+  float: left;
+}
+.content-list {
+  width: 980px;
+  height: 615px;
+  float: left;
+}
+/* 排版 设置：宽、高 */
+.content-list-item {
+  width: 235px;
+  height: 300px;
+  background: #fff;
+  float: left;
+  margin-right: 13px;
+  margin-bottom: 14px;
+  /* line-height: 200px; */
+}
+.content-list-item-top {
+    display: block;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+}
+.top-g {
+  margin: auto 90px;
+  background: #83c44e;
+}
+.content-list-item-name {
+    display: block;
+  text-align: center;
+}
+
+
+.price{
+    display: block;
+    color: #ff6700;
+    font-size: 14px;
+    text-align: center;
+    white-space: nowrap;
+}
+.no-price{
+    color: #b0b0b0;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: line-through;
+}

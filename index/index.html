@@ -4,25 +4,35 @@
 <head>
     <meta charset="utf-8">
     <title>制作我的第一个网页</title>
-</head>
-<!-- html与css关联：以下两种方式 -->
+<!-- 选择器优先级：内联式>id选择器>类选择器>标签选择器>通配符选择器*{} -->
+<!-- css就近原则: 内联式>嵌入式\外部式(谁在后，展示谁的设置) -->
+<!--外部式 -->
 <link rel="stylesheet" href="index.css" type="text/css">
-
-<!-- <style type="text/css">
+<!-- 嵌入式 -->
+<style type="text/css">
 p{
-    color:#270093;
+    font-family: 'Microsoft-Yahei';
+    color:green;
     width: 140px;
     height: 40px;
     border: 1px solid black;
     text-align:center;
-}</style> -->
+}
+#div1{
+    border:1px red solid;
+    width: 10px;
+    height: 10px;
+}
+</style>
+</head>
 <!-- html与js关联 -->
 <script src="./index.js" type="text/javascript"></script>
 
 <body>
     <h1>Hello World</h1>
-    <div>
-        <p>当特殊的样式需要应用到个别元素时，就可以使用内联样式。</p>
+    <div id="div1">
+        <!-- 内联式 -->
+        <!-- <p style="color:red">当特殊的样式需要应用到个别元素时，就可以使用内联样式。</p> -->
     </div>
     <button onclick="clickFn()">按钮</button>
     <template v-if="true">
