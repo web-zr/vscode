@@ -38,8 +38,6 @@
     display: block;
   text-align: center;
 }
-
-
 .price{
     display: block;
     color: #ff6700;
@@ -52,4 +50,34 @@
     font-size: 14px;
     text-align: center;
     text-decoration: line-through;
+}
+
+
+
+
+.content-show-photo{
+    width: 235px;
+    height: 615px;
+}
+/* .top-r{
+    margin: auto 90px;
+    background: #e53935;
+} */
+
+.content-list-item-photo{
+    /*clear: both;*/
+    height: 160px;
+    width: 160px;
+    margin: 10px 36.5px 15px;
+}
+
+.content-list-item-explain{
+    font-size: 12px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 18px;
+    margin: 0 10px 10px;
+    color: #b0b0b0;
+    overflow: hidden;
 }
