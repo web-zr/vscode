@@ -4,75 +4,195 @@
 <head>
     <title>小米商城模块练习</title>
     <meta charset="utf-8">
+    <!-- 标题图标 -->
+    <link rel="shortcut icon" href="..\xiaomiImage\favicon.ico" type="image/x-icon">
     <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width,initial-scale=1.0"> -->
     <link rel="stylesheet" href="xiaomiModel.css">
+    <link rel="stylesheet" href="..\xiaomiModel\css\iconfont.css">
     <script src="xiaomiModel.js"></script>
 </head>
 
 <body>
-    <div class="content">
-        <div class="content-show">
-            <!-- ../资源位置 -->
-            <img class="content-show-photo" src="../xiaomiImage\images\小米Mix.jpg" alt="小米MIX Alpha">
+    <!-- 小米闪购 -->
+    <div class="topbar">
+        <div class="container">
+            <div class="topbar-nav">
+                <a href="">小米商城</a><span>|</span>
+                <a href="">MIUI</a><span>|</span>
+                <a href="">IOT</a><span>|</span>
+                <a href="">云服务</a><span>|</span>
+                <a href="">金融</a><span>|</span>
+                <a href="">有品</a><span>|</span>
+                <a href="">小爱开放平台</a><span>|</span>
+                <a href="">企业团购</a><span>|</span>
+                <a href="">资质证照</a><span>|</span>
+                <a href="">协议规则</a><span>|</span>
+                <a href="">下载APP</a><span>|</span>
+                <a href="">智能生活</a><span>|</span>
+                <a href="">Select Location</a><span>|</span>
+            </div>
+            <div class="topbar-cart">
+                <a href=""><i class="iconfont">&#xe747;</i>购物车<span> (0) </span></a>
+            </div>
+            <div class="topbar-info clear-fix">
+                <a href="">登录</a><span>|</span>
+                <a href="">注册</a><span>|</span>
+                <a href="" class="sep">消息通知</a>
+            </div>
         </div>
-        <div class="content-list">
-            <div class="content-list-item">
-                <span class="content-list-item-top top-g">新品</span>
-                <img class="content-list-item-photo" src="../xiaomiImage\images\redmi K30.jpg" alt="Redmi K30至尊版">
-                <span class="content-list-item-name">Redmi K30至尊版</span>
-                <p class="content-list-item-explain">120HZ弹出全面屏，天玑1000+旗舰处</p>
-                <span class="price">1999元起 <span class="no-price">2299元</span></span>
+    </div>
+    <div class="header">
+        <div class="container">
+            <div class="header-log">
+                <a href="#">
+                    <img src="..\xiaomiImage\s02.mifile.cn\assets\static\image\mi-logo.png" alt="">
+                </a>
             </div>
-            <div class="content-list-item">
-                <span class="content-list-item-top top-g">新品</span>
-                <img class="content-list-item-photo" src="../xiaomiImage\images\腾讯黑鲨.jpg" alt="腾讯黑鲨">
-                <span class="content-list-item-name">腾讯黑鲨</span>
-                <p class="content-list-item-explain">骁龙865处理器，120HZ刷新率</p>
-                <span class="price">3999元起<span class="no-price">4299元</span></span>
+            <div class="header-nav">
+                <ul class="nav-list clear-fix">
+                    <li class="nav-category">
+                        <a href="">全部商品分类</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">小米手机</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">Redmi红米</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">电视</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">笔记本</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">家电</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">路由器</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">智能硬件</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">服务</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">社区</a>
+                    </li>
+                </ul>
             </div>
-            <div class="content-list-item">
-                <span class="content-list-item-top top-g">新品</span>
-                <img class="content-list-item-photo" src="../xiaomiImage\images\redmi 9A.jpg" alt="redmi 9A">
-                <span class="content-list-item-name">redmi 9A</span>
-                <p class="content-list-item-explain">5000mAh长循环大电量</p>
-                <span class="price">499元起<span class="no-price">599元</span></span>
+            <div class="header-search">
+                <form action="" class="search-form">
+                    <input type="search" name="keyword" class="search-text">
+                    <input type="submit" value="&#xe6b2;" class="search-btn iconfont" >
+                </form>
             </div>
-            <div class="content-list-item">
-                <span class="content-list-item-top top-g">新品</span>
-                <img class="content-list-item-photo" src="../xiaomiImage\images\redmi 9A.jpg" alt="redmi 9A">
-                <span class="content-list-item-name">redmi 9A</span>
-                <p class="content-list-item-explain">5000mAh长循环大电量</p>
-                <span class="price">499元起<span class="no-price">599元</span></span>
+        </div>
+    </div>
+
+    <!-- 展示折叠树 -->
+    <!-- <div>
+        <ul>
+            <li>
+                <a href="../demo1/demo1.html"
+                    onclick="_msq.push(['trackEvent','81190ccc4d52f577-87a99ce6eaa763c2','//www.mi.com/p/1915.html','pcpid','31pchomeother001000#t=normal&act=other&page=home&page_id=10530&bid=3476792.1']);">
+                    手机 电话卡
+                    <em></em>
+                </a>
+            </li>
+            <li>
+                <a href="../demo1/demo1.html"> 电视 盒子</a>
+            </li>
+            <li>
+                <a href="../demo1/demo1.html"> 笔记本 显示器</a>
+            </li>
+            <li>
+                家电 插线板
+            </li>
+            <li>
+                出行 穿戴
+            </li>
+            <li>
+                智能 路由器
+            </li>
+        </ul>
+    </div> -->
+    <!-- 展示手机 -->
+    <div class="model">
+        <div>
+            <h2 class="title">手机</h2>
+        </div>
+        <div class="content">
+            <div class="content-show">
+                <!-- ../资源位置 -->
+                <img class="content-show-photo" src="../xiaomiImage\images\小米Mix.jpg" alt="小米MIX Alpha">
             </div>
-            <!-- <div class="content-list-item">
-                <span class="content-list-item-top top-g">新品</span>
-                <img class="content-list-item-photo" src="../xiaomiImage\images\redmi 9A.jpg" alt="redmi 9A">
-                <span class="content-list-item-name">redmi 9A</span>
-                <p class="content-list-item-explain">5000mAh长循环大电量</p>
-                <span class="price">499元起<span class="no-price">599元</span></span>
+            <div class="content-list">
+                <div class="content-list-item">
+                    <!-- 动态页面 -->
+                    <a href="https://www.mi.com/buy/detail?product_id=10000204" target="_blank">
+                        <span class="content-list-item-top top-g">新品</span>
+                        <img class="content-list-item-photo" src="../xiaomiImage\images\redmi K30.jpg"
+                            alt="Redmi K30至尊版">
+                        <span class="content-list-item-name">Redmi K30至尊版</span>
+                        <span class="content-list-item-explain">120HZ弹出全面屏，天玑1000+旗舰处yichu屏幕的处理情况</span>
+                        <span class="price">1999元起 <span class="no-price">2299元</span></span>
+                    </a>
+                </div>
+                <div class="content-list-item">
+                    <a href="https://www.mi.com/buy/detail?product_id=12609" target="_blank">
+                        <span class="content-list-item-top top-g">新品</span>
+                        <img class="content-list-item-photo" src="../xiaomiImage\images\腾讯黑鲨.jpg" alt="腾讯黑鲨">
+                        <span class="content-list-item-name">腾讯黑鲨</span>
+                        <p class="content-list-item-explain">骁龙865处理器，120HZ刷新率</p>
+                        <span class="price">3999元起 <span class="no-price">4299元</span></span>
+                    </a>
+                </div>
+                <div class="content-list-item">
+                    <span class="content-list-item-top top-g">新品</span>
+                    <img class="content-list-item-photo" src="../xiaomiImage\images\redmi 9A.jpg" alt="redmi 9A">
+                    <span class="content-list-item-name">redmi 9A</span>
+                    <p class="content-list-item-explain">5000mAh长循环大电量</p>
+                    <span class="price">499元起 <span class="no-price">599元</span></span>
+                </div>
+                <div class="content-list-item">
+                    <span class="content-list-item-top top-g">新品</span>
+                    <img class="content-list-item-photo" src="../xiaomiImage\images\redmi 9A.jpg" alt="redmi 9A">
+                    <span class="content-list-item-name">redmi 9A</span>
+                    <p class="content-list-item-explain">5000mAh长循环大电量</p>
+                    <span class="price">499元起 <span class="no-price">599元</span></span>
+                </div>
+                <div class="content-list-item">
+                    <span class="content-list-item-top top-g">新品</span>
+                    <img class="content-list-item-photo" src="../xiaomiImage\images\redmi 9A.jpg" alt="redmi 9A">
+                    <span class="content-list-item-name">redmi 9A</span>
+                    <p class="content-list-item-explain">5000mAh长循环大电量</p>
+                    <span class="price">499元起 <span class="no-price">599元</span></span>
+                </div>
+                <div class="content-list-item">
+                    <span class="content-list-item-top top-g">新品</span>
+                    <img class="content-list-item-photo" src="../xiaomiImage\images\redmi 9A.jpg" alt="redmi 9A">
+                    <span class="content-list-item-name">redmi 9A</span>
+                    <p class="content-list-item-explain">5000mAh长循环大电量</p>
+                    <span class="price">499元起 <span class="no-price">599元</span></span>
+                </div>
+                <div class="content-list-item">
+                    <span class="content-list-item-top top-g">新品</span>
+                    <img class="content-list-item-photo" src="../xiaomiImage\images\redmi 9A.jpg" alt="redmi 9A">
+                    <span class="content-list-item-name">redmi 9A</span>
+                    <p class="content-list-item-explain">5000mAh长循环大电量</p>
+                    <span class="price">499元起 <span class="no-price">599元</span></span>
+                </div>
+                <div class="content-list-item">
+                    <span class="content-list-item-top top-g">新品</span>
+                    <img class="content-list-item-photo" src="../xiaomiImage\images\redmi 9A.jpg" alt="redmi 9A">
+                    <span class="content-list-item-name">redmi 9A</span>
+                    <p class="content-list-item-explain">5000mAh长循环大电量</p>
+                    <span class="price">499元起 <span class="no-price">599元</span></span>
+                </div>
             </div>
-            <div class="content-list-item">
-                <span class="content-list-item-top top-g">新品</span>
-                <img class="content-list-item-photo" src="../xiaomiImage\images\redmi 9A.jpg" alt="redmi 9A">
-                <span class="content-list-item-name">redmi 9A</span>
-                <p class="content-list-item-explain">5000mAh长循环大电量</p>
-                <span class="price">499元起<span class="no-price">599元</span></span>
-            </div>
-            <div class="content-list-item">
-                <span class="content-list-item-top top-g">新品</span>
-                <img class="content-list-item-photo" src="../xiaomiImage\images\redmi 9A.jpg" alt="redmi 9A">
-                <span class="content-list-item-name">redmi 9A</span>
-                <p class="content-list-item-explain">5000mAh长循环大电量</p>
-                <span class="price">499元起<span class="no-price">599元</span></span>
-            </div>
-            <div class="content-list-item">
-                <span class="content-list-item-top top-g">新品</span>
-                <img class="content-list-item-photo" src="../xiaomiImage\images\redmi 9A.jpg" alt="redmi 9A">
-                <span class="content-list-item-name">redmi 9A</span>
-                <p class="content-list-item-explain">5000mAh长循环大电量</p>
-                <span class="price">499元起<span class="no-price">599元</span></span>
-            </div> -->
         </div>
     </div>
 </body>
